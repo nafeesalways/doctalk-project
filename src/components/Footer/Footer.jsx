@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/Frame 1.png";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -8,18 +9,18 @@ const Footer = () => {
         <img src={logo} alt="" />
 
         <ul className="flex space-x-2">
-          <li>
+        <Link to='/'>   <li>
             <a className="cursor-pointer" href="#">Home</a>
-          </li>
-          <li>
-            <a className="cursor-pointer" href="#">My Bookings </a>
-          </li>
-          <li>
-            <a className="cursor-pointer" href="#">Blogs</a>
-          </li>
-          <li>
+          </li></Link>
+          <Link to='/Bookings'>   <li>
+            <a className="cursor-pointer" href="#">Bookings</a>
+          </li></Link>
+          <Link to='/Blogs'>   <li>
+            <a className="cursor-pointer" href="#">Blog</a>
+          </li></Link>
+       <Link to='/Contact'>   <li>
             <a className="cursor-pointer" href="#">Contact Us</a>
-          </li>
+          </li></Link>
         </ul>
       </aside>
       <nav>
