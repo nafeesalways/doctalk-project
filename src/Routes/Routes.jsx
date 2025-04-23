@@ -1,7 +1,7 @@
 import React, { Children } from 'react';
 import {
     createBrowserRouter,
-    RouterProvider,
+    
   } from "react-router"
 import Root from '../pages/Root/Root';
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
@@ -10,6 +10,7 @@ import Bookings from '../pages/Bookings/Bookings';
 import DoctorDetails from '../pages/DoctorDetails/DoctorDetails';
 import Blogs from '../pages/Blogs/Blogs';
 import Contact from '../pages/Contact/Contact';
+import Loader from '../components/Loader/Loader';
 
  export const router = createBrowserRouter([
     {
@@ -20,6 +21,7 @@ import Contact from '../pages/Contact/Contact';
     {
         index:true,
         loader:()=>fetch('doctorsData.json'),
+        hydrateFallbackElement: <p className='loading loading-bars loading-md'>Loading, Please Wait....</p>,
         path:'/',
         Component:Home,
     },
@@ -29,6 +31,8 @@ import Contact from '../pages/Contact/Contact';
     },
     {
       path: '/Blogs',
+      loader:()=>fetch('/blogs.json'),
+      hydrateFallbackElement: <Loader></Loader>,
      Component:Blogs,
     },
     {

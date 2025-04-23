@@ -1,111 +1,122 @@
 [
-    {
-      "id": 1,
-      "image": "https://i.ibb.co.com/whXWzVFx/ayesha-rahman-md-jackson-heights-ny.webp",
-      "name": "Dr. Ayesha Rahman",
-      "education": "MBBS, FCPS (Medicine)",
-      "speciality": "Internal Medicine",
-      "experience": "12 years",
-      "registrationNumber": "BMDC 38456"
-    },
-    {
-      "id": 2,
-      "image": "https://i.ibb.co.com/zhVXhTVr/dr-m-zahid-hasan.jpg",
-      "name": "Dr. Zahid Hasan",
-      "education": "MBBS, MS (Orthopedics)",
-      "speciality": "Orthopedic Surgeon",
-      "experience": "15 years",
-      "registrationNumber": "BMDC 28734"
-    },
-    {
-      "id": 3,
-      "image": "https://i.ibb.co.com/wGLZVzD/360-F-504257032-j-Btwq-Ndvd-MN9-Xm6a-DT0hcvtx-DXPZErrn.jpg",
-      "name": "Dr. Nusrat Jahan",
-      "education": "MBBS, DGO, FCPS (Gynae)",
-      "speciality": "Gynecology & Obstetrics",
-      "experience": "10 years",
-      "registrationNumber": "BMDC 39485"
-    },
-    {
-      "id": 4,
-      "image": "https://i.ibb.co.com/XrcsCfQz/202412221159-Asif-Mujtuba-Respiratory-copy.jpg",
-      "name": "Dr. Asif Mahmud",
-      "education": "MBBS, MD (Cardiology)",
-      "speciality": "Cardiologist",
-      "experience": "18 years",
-      "registrationNumber": "BMDC 21876"
-    },
-    {
-      "id": 5,
-      "image": "https://i.ibb.co.com/rRq8ksHY/Taslima-2e16d0ba-fill-500x666-c0.png",
-      "name": "Dr. Farzana Karim",
-      "education": "MBBS, FCPS (Dermatology)",
-      "speciality": "Dermatologist",
-      "experience": "8 years",
-      "registrationNumber": "BMDC 40892"
-    },
-    {
-      "id": 6,
-      "image": "https://i.ibb.co.com/DDpSM5T0/Dr-Ashfak-WEB.webp",
-      "name": "Dr. Tareq Islam",
-      "education": "MBBS, FCPS (Surgery)",
-      "speciality": "General Surgeon",
-      "experience": "13 years",
-      "registrationNumber": "BMDC 34789"
-    },
-    {
-      "id": 7,
-      "image": "https://i.ibb.co.com/WW7K6RVy/rsz-118-photo-of-dr-nusrat-benta-nizam.jpg",
-      "name": "Dr. Salma Akter",
-      "education": "MBBS, MD (Pediatrics)",
-      "speciality": "Pediatrician",
-      "experience": "9 years",
-      "registrationNumber": "BMDC 37645"
-    },
-    {
-      "id": 8,
-      "image": "https://i.ibb.co.com/1JMrBhxT/images.jpg",
-      "name": "Dr. Kamrul Hossain",
-      "education": "MBBS, FCPS (ENT)",
-      "speciality": "ENT Specialist",
-      "experience": "11 years",
-      "registrationNumber": "BMDC 33221"
-    },
-    {
-      "id": 9,
-      "image": "https://i.ibb.co.com/hR2NvHRX/30.jpg",
-      "name": "Dr. Lubna Siddiqua",
-      "education": "MBBS, MD (Neurology)",
-      "speciality": "Neurologist",
-      "experience": "14 years",
-      "registrationNumber": "BMDC 29877"
-    },
-    {
-      "id": 10,
-      "image": "https://i.ibb.co.com/R4HDjrDR/Anis.jpg",
-      "name": "Dr. Rezaul Karim",
-      "education": "MBBS, MD (Nephrology)",
-      "speciality": "Nephrologist",
-      "experience": "10 years",
-      "registrationNumber": "BMDC 36192"
-    },
-    {
-      "id": 11,
-      "image": "https://i.ibb.co.com/h1MLv3mV/2022100406021567416633-2-IMG-4177-Edit.jpg",
-      "name": "Dr. Sumaiya Yasmin",
-      "education": "MBBS, FCPS (Ophthalmology)",
-      "speciality": "Eye Specialist",
-      "experience": "7 years",
-      "registrationNumber": "BMDC 40567"
-    },
-    {
-      "id": 12,
-      "image": "https://i.ibb.co.com/Fq6fPxmR/images-1.jpg",
-      "name": "Dr. Mahfuz Anwar",
-      "education": "MBBS, MS (Urology)",
-      "speciality": "Urologist",
-      "experience": "16 years",
-      "registrationNumber": "BMDC 25489"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/whXWzVFx/ayesha-rahman-md-jackson-heights-ny.webp",
+    "name": "Dr. Ayesha Rahman",
+    "education": "MBBS, FCPS (Medicine)",
+    "speciality": "Internal Medicine",
+    "experience": "12 years",
+    "registrationNumber": "BMDC 38456",
+    "fee": "1000 BDT"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/zhVXhTVr/dr-m-zahid-hasan.jpg",
+    "name": "Dr. Zahid Hasan",
+    "education": "MBBS, MS (Orthopedics)",
+    "speciality": "Orthopedic Surgeon",
+    "experience": "15 years",
+    "registrationNumber": "BMDC 28734",
+    "fee": "1200 BDT"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/wGLZVzD/360-F-504257032-j-Btwq-Ndvd-MN9-Xm6a-DT0hcvtx-DXPZErrn.jpg",
+    "name": "Dr. Nusrat Jahan",
+    "education": "MBBS, DGO, FCPS (Gynae)",
+    "speciality": "Gynecology & Obstetrics",
+    "experience": "10 years",
+    "registrationNumber": "BMDC 39485",
+    "fee": "1000 BDT"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/XrcsCfQz/202412221159-Asif-Mujtuba-Respiratory-copy.jpg",
+    "name": "Dr. Asif Mahmud",
+    "education": "MBBS, MD (Cardiology)",
+    "speciality": "Cardiologist",
+    "experience": "18 years",
+    "registrationNumber": "BMDC 21876",
+    "fee": "1300 BDT"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/rRq8ksHY/Taslima-2e16d0ba-fill-500x666-c0.png",
+    "name": "Dr. Farzana Karim",
+    "education": "MBBS, FCPS (Dermatology)",
+    "speciality": "Dermatologist",
+    "experience": "8 years",
+    "registrationNumber": "BMDC 40892",
+    "fee": "900 BDT"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/DDpSM5T0/Dr-Ashfak-WEB.webp",
+    "name": "Dr. Tareq Islam",
+    "education": "MBBS, FCPS (Surgery)",
+    "speciality": "General Surgeon",
+    "experience": "13 years",
+    "registrationNumber": "BMDC 34789",
+    "fee": "1100 BDT"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/WW7K6RVy/rsz-118-photo-of-dr-nusrat-benta-nizam.jpg",
+    "name": "Dr. Salma Akter",
+    "education": "MBBS, MD (Pediatrics)",
+    "speciality": "Pediatrician",
+    "experience": "9 years",
+    "registrationNumber": "BMDC 37645",
+    "fee": "950 BDT"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/1JMrBhxT/images.jpg",
+    "name": "Dr. Kamrul Hossain",
+    "education": "MBBS, FCPS (ENT)",
+    "speciality": "ENT Specialist",
+    "experience": "11 years",
+    "registrationNumber": "BMDC 33221",
+    "fee": "1000 BDT"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/hR2NvHRX/30.jpg",
+    "name": "Dr. Lubna Siddiqua",
+    "education": "MBBS, MD (Neurology)",
+    "speciality": "Neurologist",
+    "experience": "14 years",
+    "registrationNumber": "BMDC 29877",
+    "fee": "1200 BDT"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/R4HDjrDR/Anis.jpg",
+    "name": "Dr. Rezaul Karim",
+    "education": "MBBS, MD (Nephrology)",
+    "speciality": "Nephrologist",
+    "experience": "10 years",
+    "registrationNumber": "BMDC 36192",
+    "fee": "1100 BDT"
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/h1MLv3mV/2022100406021567416633-2-IMG-4177-Edit.jpg",
+    "name": "Dr. Sumaiya Yasmin",
+    "education": "MBBS, FCPS (Ophthalmology)",
+    "speciality": "Eye Specialist",
+    "experience": "7 years",
+    "registrationNumber": "BMDC 40567",
+    "fee": "850 BDT"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/Fq6fPxmR/images-1.jpg",
+    "name": "Dr. Mahfuz Anwar",
+    "education": "MBBS, MS (Urology)",
+    "speciality": "Urologist",
+    "experience": "16 years",
+    "registrationNumber": "BMDC 25489",
+    "fee": "1250 BDT"
+  }
+]

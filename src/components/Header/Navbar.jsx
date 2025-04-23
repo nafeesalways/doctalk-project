@@ -1,13 +1,14 @@
 import React from 'react';
 import logo from '../../assets/Frame 1.png'
-import { Link } from 'react-router';
+import {  NavLink } from 'react-router';
+import './Navbar.css'
 
 const Navbar = () => {
     const Links = <>
-   <Link to='/'> <li className='font-bold mr-4 cursor-pointer'>Home</li></Link>
-   <Link to='/Bookings'> <li className='font-bold mr-4 cursor-pointer'>My Bookings</li></Link>
-   <Link to='/Blogs'> <li className='font-bold mr-4 cursor-pointer'>Blog</li></Link>
-   <Link to='/Contact'> <li className='font-bold mr-4 cursor-pointer'>Contact us</li></Link>
+   <NavLink to='/'> <li className='font-bold mr-4 cursor-pointer '>Home</li></NavLink>
+   <NavLink to='/Bookings'> <li className='font-bold mr-4 cursor-pointer'>My Bookings</li></NavLink>
+   <NavLink to='/Blogs'> <li className='font-bold mr-4 cursor-pointer'>Blog</li></NavLink>
+   <NavLink to='/Contact'> <li className='font-bold mr-4 cursor-pointer'>Contact us</li></NavLink>
    
     </>
     return (

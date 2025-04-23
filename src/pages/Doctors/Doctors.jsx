@@ -11,7 +11,7 @@ const Doctors = ({ data }) => {
         checkup or urgent consultation, book appointments in minutes and receive
         quality care you can trust.
       </p>
-      <Suspense fallback={<span>doctors loading...</span>}>
+      <Suspense fallback={<span className="loading loading-bars loading-md"></span>}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {data.map((singleDoctor) => (
             <Doctor key={singleDoctor.id} singleDoctor={singleDoctor}></Doctor>

@@ -7,7 +7,7 @@ const DoctorDetails = () => {
   const doctorId = parseInt(id);
   const data = useLoaderData();
   const Doctor = data?.find((doctor) => doctor.id === doctorId);
-  const { image, education, name, experience, registrationNumber, speciality } = Doctor || {};
+  const { image, education, name, experience, registrationNumber, speciality,fee } = Doctor || {};
    
 
   return (
@@ -30,7 +30,7 @@ const DoctorDetails = () => {
      
             <p className="flex items-center justify-center mr-2"><RiRegisteredLine /> Reg No:{registrationNumber}</p>
             <p className="mt-3">Availability:  <span className="px-2 rounded-lg border border-b-blue-300 bg-[#FFA000]">Sunday</span> <span className="px-2 rounded-lg border-b-blue-300 bg-[#FFA000]">Monday</span> <span className="px-2 rounded-lg border-b-blue-300 bg-[#FFA000]">Thursday</span></p>
-<p className="mt-4">Consultation Fee: <span className="text-blue-400">Tk: 280</span></p>
+<p className="mt-4">Consultation Fee: <span className="text-blue-400">Tk: {fee}</span></p>
           </div>
         </div>
       </div>
