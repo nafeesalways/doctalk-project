@@ -27,6 +27,8 @@ import Loader from '../components/Loader/Loader';
     },
     {
       path: '/Bookings',
+      loader:()=>fetch('doctorsData.json'),
+      hydrateFallbackElement: <p className='loading loading-bars loading-md'>Loading, Please Wait....</p>,
       Component: Bookings,
     },
     {
@@ -37,6 +39,8 @@ import Loader from '../components/Loader/Loader';
     },
     {
       path: '/Contact',
+      loader:()=>fetch('doctorsData.json'),
+      hydrateFallbackElement: <p className='loading loading-bars loading-md'>Loading, Please Wait....</p>,
      Component:Contact,
     },
     {

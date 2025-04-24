@@ -1,6 +1,8 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
 import { RiRegisteredLine } from "react-icons/ri";
+import { addToStoredDb } from "../../utilities/storage";
+import { ToastContainer, toast } from 'react-toastify';
 
 const DoctorDetails = () => {
   const { id } = useParams();
@@ -8,6 +10,11 @@ const DoctorDetails = () => {
   const data = useLoaderData();
   const Doctor = data?.find((doctor) => doctor.id === doctorId);
   const { image, education, name, experience, registrationNumber, speciality,fee } = Doctor || {};
+
+  const handleBookAppointment =(id)=>{
+    toast("Appointment scheduled");
+addToStoredDb(id)
+  }
    
 
   return (
@@ -30,10 +37,39 @@ const DoctorDetails = () => {
      
             <p className="flex items-center justify-center mr-2"><RiRegisteredLine /> Reg No:{registrationNumber}</p>
             <p className="mt-3">Availability:  <span className="px-2 rounded-lg border border-b-blue-300 bg-[#FFA000]">Sunday</span> <span className="px-2 rounded-lg border-b-blue-300 bg-[#FFA000]">Monday</span> <span className="px-2 rounded-lg border-b-blue-300 bg-[#FFA000]">Thursday</span></p>
-<p className="mt-4">Consultation Fee: <span className="text-blue-400">Tk: {fee}</span></p>
+<p className="mt-4">Consultation Fee: <span className="text-blue-400">Tk: {fee} <span className="text-gray-300">+ included Vat</span></span></p>
           </div>
         </div>
       </div>
+      {/* appointment booking */}
+      <div className="hero border border-blue-400 rounded-xl mt-5">
+  <div className="hero-content text-center">
+    <div className="max-w-md">
+    <ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+
+/>
+      <h1 className="text-5xl font-bold">Book An Appointment</h1>
+      <p className="py-4 font-bold">
+       Availability
+      </p>
+      <p className="py-6">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+      <button onClick={()=>handleBookAppointment(id)} className="btn btn-primary">Book Appointment Now</button>
+    </div>
+  </div>
+</div>
     </div>
   );
 };
