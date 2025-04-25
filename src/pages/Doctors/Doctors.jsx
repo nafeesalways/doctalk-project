@@ -4,7 +4,7 @@ import Doctor from "../Doctor/Doctor";
 const Doctors = ({ data }) => {
   return (
     <div>
-      <h3 className="text-3xl font-bold mb-3">Our Best Doctors</h3>
+      <h3 className="text-3xl font-bold mb-3 mt-5">Our Best Doctors</h3>
       <p className="text-gray-500 mb-3">
         Our platform connects you with verified, experienced doctors across
         various specialties — all at your convenience. Whether it's a routine

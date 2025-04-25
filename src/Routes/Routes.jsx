@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import {
     createBrowserRouter,
     
@@ -47,7 +47,8 @@ import Loader from '../components/Loader/Loader';
       path: '/doctorDetails/:id',
       loader:()=>fetch('./doctorsData.json'),
       Component: DoctorDetails,
-    }
+    },
+
    ]
     },
     

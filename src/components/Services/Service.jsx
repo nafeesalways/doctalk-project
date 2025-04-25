@@ -14,44 +14,47 @@ const Service = () => {
       <div className="border border-blue-500 p-6 rounded-lg">
         <img className="h-9 w-9" src={img1} alt="" />
     <div className="flex space-x-3">
-        <h3 className="text-2xl">+</h3>
-        <CountUp duration={5} start={0} end={200} style={{fontSize:'25px',
+        
+        <CountUp duration={10} start={0} end={2000} style={{fontSize:'25px',
             fontWeight: 'bold',
             textAlign: 'center',
         }}></CountUp>
+         <h3 className="text-2xl">+</h3>
     </div>
         <p className="font-semibold">Total Doctors</p>
       </div>
       <div className="border p-6 border-blue-500 rounded-lg">
         <img className="h-9 w-9" src={img2} alt="" />
         <div className="flex space-x-3">
-        <h3 className="text-2xl">+</h3>
-        <CountUp duration={5} start={0} end={140} style={{fontSize:'25px',
+        <CountUp duration={10} start={0} end={1400} style={{fontSize:'25px',
             fontWeight: 'bold',
             textAlign: 'center',
         }}></CountUp>
+         <h3 className="text-2xl">+</h3>
     </div>
         <p className="font-semibold">Total reviews</p>
       </div>
       <div className="border border-blue-500 p-6 rounded-lg">
         <img className="h-9 w-9" src={img3} alt="" />
         <div className="flex space-x-3">
-        <h3 className="text-2xl">+</h3>
-        <CountUp duration={5}  start={0} end={180} style={{fontSize:'25px',
+       
+        <CountUp duration={10}  start={0} end={1500} style={{fontSize:'25px',
             fontWeight: 'bold',
             textAlign: 'center',
         }}></CountUp>
+         <h3 className="text-2xl">+</h3>
     </div>
         <p className="font-semibold">Patients</p>
       </div>
       <div className="border border-blue-500 p-6 rounded-lg">
         <img className="h-9 w-9" src={img4} alt="" />
         <div className="flex space-x-3">
-        <h3 className="text-2xl">+</h3>
-        <CountUp duration={5} start={0} end={250} style={{fontSize:'25px',
+        
+        <CountUp duration={10} start={0} end={1200} style={{fontSize:'25px',
             fontWeight: 'bold',
             textAlign: 'center',
         }}></CountUp>
+        <h3 className="text-2xl">+</h3>
     </div>
         <p className="font-semibold">Total Stuffs</p>
       </div>

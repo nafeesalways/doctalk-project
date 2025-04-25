@@ -4,6 +4,10 @@ import { Link } from 'react-router';
 
 const Doctor = ({singleDoctor}) => {
     const {image,name,id,education,experience,speciality,registrationNumber} = singleDoctor;
+    if(!singleDoctor){
+      return 'error'
+      
+    }
     return (
         <div className="card bg-base-100 w-96 shadow-sm border p-6">
         <figure className="px-10 pt-10">

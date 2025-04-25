@@ -5,10 +5,10 @@ import './Navbar.css'
 
 const Navbar = () => {
     const Links = <>
-   <NavLink to='/'> <li className='font-bold mr-4 cursor-pointer '>Home</li></NavLink>
-   <NavLink to='/Bookings'> <li className='font-bold mr-4 cursor-pointer'>Bookings</li></NavLink>
-   <NavLink to='/Blogs'> <li className='font-bold mr-4 cursor-pointer'>Blog</li></NavLink>
-   <NavLink to='/Contact'> <li className='font-bold mr-4 cursor-pointer'>Contact us</li></NavLink>
+   <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/'> <li className='font-bold mr-4 cursor-pointer '>Home</li></NavLink>
+   <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/Bookings'> <li className='font-bold mr-4 cursor-pointer'>Bookings</li></NavLink>
+   <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/Blogs'> <li className='font-bold mr-4 cursor-pointer'>Blog</li></NavLink>
+   <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/Contact'> <li className='font-bold mr-4 cursor-pointer'>Contact us</li></NavLink>
    
     </>
     return (
