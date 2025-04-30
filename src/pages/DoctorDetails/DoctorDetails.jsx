@@ -1,5 +1,5 @@
 import React from "react";
-import {  useLoaderData, useParams } from "react-router";
+import {  NavLink, useLoaderData, useParams } from "react-router";
 import { RiRegisteredLine } from "react-icons/ri";
 import { addToStoredDb } from "../../utilities/storage";
 import { toast } from "react-toastify";
@@ -19,11 +19,15 @@ const DoctorDetails = () => {
     fee,
   } = Doctor || {};
 
-  const handleBookAppointment = (id) => {
-    addToStoredDb(id);
-    console.log(id)
-    toast('Appointment Scheduled')
+  const handleBookAppointment = (doctor) => {
+    const success = addToStoredDb(doctor);
+    if (success) {
+      toast.success(`Appointment Scheduled for ${doctor.name}`);
+    } else {
+      toast.error("You already booked this doctor.");
+    }
   };
+  
 
   return (
     <div>
@@ -80,12 +84,12 @@ const DoctorDetails = () => {
             Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.
             </p>
 
-            <button
+          <NavLink to='/bookings'>  <button id='btn-book'
               onClick={() => handleBookAppointment(id)}
               className="btn btn-primary"
             >
               Book Appointment Now
-            </button>
+            </button></NavLink>
           </div>
         </div>
       </div>
