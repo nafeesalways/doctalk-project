@@ -28,7 +28,7 @@ const Doctors = ({ data }) => {
         </div>
         <button onClick={()=>{setShowAll(prev=>!prev)
           if(showAll)window.scrollTo(0,700)
-        }} className="btn btn-primary mt-4">{showAll? 'View Less Doctors':'View All Doctors'}</button>
+        }} className="btn text-[#176AE5] rounded-lg btn-wide mt-4">{showAll? 'View Less Doctors':'View All Doctors'}</button>
       </Suspense>
     </div>
   );

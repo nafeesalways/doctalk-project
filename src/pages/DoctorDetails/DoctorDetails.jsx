@@ -46,10 +46,10 @@ const DoctorDetails = () => {
             <h1 className="text-5xl font-bold">{name}</h1>
             <p className="py-6 font-semibold">{speciality}</p>
             <p className="py-4 font-semibold">{experience}</p>
-            <p className="font-bold text-xl">Working at:{education}</p>
+            <p className="font-bold text-xl">Working at:<span className="font-semibold">{education}</span></p>
 
             <p className="flex items-center justify-center mr-2 mt-6 font-semibold">
-              <RiRegisteredLine /> Reg No:{registrationNumber}
+              <RiRegisteredLine /> Reg No:<span className="font-semibold">{registrationNumber}</span>
             </p>
             <p className="mt-3 font-semibold">
               Availability:{" "}
@@ -75,19 +75,19 @@ const DoctorDetails = () => {
       {/* appointment booking */}
       <div className="hero border border-blue-400 rounded-xl mt-5">
         <div className="hero-content text-center">
-          <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Book An Appointment</h1>
-           <div className="flex justify-around items-center">
-           <p className="py-4 font-bold">Availability</p>
+          <div className="max-w-lg">
+            <h1 className="text-3xl font-bold">Book An Appointment</h1>
+           <div className=" justify-between flex items-center mt-4">
+           <p className="py-2 font-bold border border-blue-400 rounded-lg px-4">Availability</p>
            <button className="btn px-3 rounded-xl text-white bg-[#09982F]">Doctor Available Today</button>
            </div>
-            <p className="mt-6 mb-4 text-[#FFA000] rounded-lg text-sm border border-[">
+            <p className="mt-6 mb-4 p-3 text-[#FFA000] rounded-lg text-sm border border-[">
             Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.
             </p>
 
-          <NavLink to='/bookings'>  <button id='btn-book'
+          <NavLink to='/bookings'>  <button 
               onClick={() => handleBookAppointment(doctor)}
-              className="btn btn-primary"
+              className="btn text-[#176AE5] rounded-lg btn-wide mt-4"
             >
               Book Appointment Now
             </button></NavLink>

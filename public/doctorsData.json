@@ -7,7 +7,7 @@
     "speciality": "Internal Medicine",
     "experience": "12 years",
     "registrationNumber": "BMDC 38456",
-    "fee": "1000 BDT"
+    "fee": 1000 
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "image": "https://i.ibb.co.com/wGLZVzD/360-F-504257032-j-Btwq-Ndvd-MN9-Xm6a-DT0hcvtx-DXPZErrn.jpg",
+    "image": "https://i.ibb.co.com/kL6kM8R/dr-rubaiya-khan.jpg",
     "name": "Dr. Nusrat Jahan",
     "education": "MBBS, DGO, FCPS (Gynae)",
     "speciality": "Gynecology & Obstetrics",
@@ -51,8 +51,8 @@
   },
   {
     "id": 6,
-    "image": "https://i.ibb.co.com/DDpSM5T0/Dr-Ashfak-WEB.webp",
-    "name": "Dr. Tareq Islam",
+    "image": "https://i.ibb.co.com/CT0V6q9/Dr-tayef-Mahmud.jpg",
+    "name": "Dr.Tayef Mahmud",
     "education": "MBBS, FCPS (Surgery)",
     "speciality": "General Surgeon",
     "experience": "13 years",

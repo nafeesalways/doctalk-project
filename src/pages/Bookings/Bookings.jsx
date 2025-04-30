@@ -60,7 +60,7 @@ console.log(appointments)
           </div>
           <button
             onClick={() => cancelAppointment(doc.id)}
-            className="btn btn-error mt-2 w-full"
+            className="btn btn-error mt-2 w-full rounded-lg"
           >
             Cancel Appointment
           </button>
