@@ -8,7 +8,7 @@ const DoctorDetails = () => {
   const { id } = useParams();
   const doctorId = parseInt(id);
   const data = useLoaderData();
-  const Doctor = data?.find((doctor) => doctor.id === doctorId);
+  const doctor = data?.find((doctor) => doctor.id === doctorId);
   const {
     image,
     education,
@@ -17,12 +17,13 @@ const DoctorDetails = () => {
     registrationNumber,
     speciality,
     fee,
-  } = Doctor || {};
+  } = doctor || {};
 
   const handleBookAppointment = (doctor) => {
     const success = addToStoredDb(doctor);
+    console.log(doctor)
     if (success) {
-      toast.success(`Appointment Scheduled for ${doctor.name}`);
+      toast.success(`Appointment Scheduled for ${doctor.name} Successfully`);
     } else {
       toast.error("You already booked this doctor.");
     }
@@ -85,7 +86,7 @@ const DoctorDetails = () => {
             </p>
 
           <NavLink to='/bookings'>  <button id='btn-book'
-              onClick={() => handleBookAppointment(id)}
+              onClick={() => handleBookAppointment(doctor)}
               className="btn btn-primary"
             >
               Book Appointment Now

@@ -17,7 +17,7 @@
     "speciality": "Orthopedic Surgeon",
     "experience": "15 years",
     "registrationNumber": "BMDC 28734",
-    "fee": "1200 BDT"
+    "fee": 1200
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "speciality": "Gynecology & Obstetrics",
     "experience": "10 years",
     "registrationNumber": "BMDC 39485",
-    "fee": "1000 BDT"
+    "fee": 1000
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "speciality": "Cardiologist",
     "experience": "18 years",
     "registrationNumber": "BMDC 21876",
-    "fee": "1300 BDT"
+    "fee": 1300
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "speciality": "Dermatologist",
     "experience": "8 years",
     "registrationNumber": "BMDC 40892",
-    "fee": "900 BDT"
+    "fee": 900
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "speciality": "General Surgeon",
     "experience": "13 years",
     "registrationNumber": "BMDC 34789",
-    "fee": "1100 BDT"
+    "fee": 1100 
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "speciality": "Pediatrician",
     "experience": "9 years",
     "registrationNumber": "BMDC 37645",
-    "fee": "950 BDT"
+    "fee": 950
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "speciality": "ENT Specialist",
     "experience": "11 years",
     "registrationNumber": "BMDC 33221",
-    "fee": "1000 BDT"
+    "fee": 1000
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "speciality": "Neurologist",
     "experience": "14 years",
     "registrationNumber": "BMDC 29877",
-    "fee": "1200 BDT"
+    "fee": 1200
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "speciality": "Nephrologist",
     "experience": "10 years",
     "registrationNumber": "BMDC 36192",
-    "fee": "1100 BDT"
+    "fee": 1100
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "speciality": "Eye Specialist",
     "experience": "7 years",
     "registrationNumber": "BMDC 40567",
-    "fee": "850 BDT"
+    "fee": 850
   },
   {
     "id": 12,
@@ -117,6 +117,6 @@
     "speciality": "Urologist",
     "experience": "16 years",
     "registrationNumber": "BMDC 25489",
-    "fee": "1250 BDT"
+    "fee": 1250
   }
 ]

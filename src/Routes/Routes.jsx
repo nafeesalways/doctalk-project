@@ -11,12 +11,13 @@ import DoctorDetails from '../pages/DoctorDetails/DoctorDetails';
 import Blogs from '../pages/Blogs/Blogs';
 import Contact from '../pages/Contact/Contact';
 import Loader from '../components/Loader/Loader';
+import Error from './Error';
 
  export const router = createBrowserRouter([
     {
       path: "/",
     Component: Root,
-   errorElement: <ErrorPage></ErrorPage>,
+    errorElement: <Error></Error>,
    children:[
     {
         index:true,
@@ -37,17 +38,14 @@ import Loader from '../components/Loader/Loader';
       hydrateFallbackElement: <Loader></Loader>,
      Component:Blogs,
     },
-    {
-      path: '/Contact',
-      loader:()=>fetch('doctorsData.json'),
-      hydrateFallbackElement: <p className='loading loading-bars loading-md'>Loading, Please Wait....</p>,
-     Component:Contact,
-    },
+ 
     {
       path: '/doctorDetails/:id',
       loader:()=>fetch('./doctorsData.json'),
       Component: DoctorDetails,
+      errorElement: <ErrorPage></ErrorPage>
     },
+   
 
    ]
     },
