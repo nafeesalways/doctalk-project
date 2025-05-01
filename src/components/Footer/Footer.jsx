@@ -9,16 +9,16 @@ const Footer = () => {
         <img src={logo} alt="" />
 
         <ul className="flex space-x-2">
-        <NavLink to='/'>   <li>
+        <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/'>   <li>
             <a className="cursor-pointer font-bold" href="#">Home</a>
           </li></NavLink>
-          <NavLink to='/Bookings'>   <li>
+          <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/Bookings'>   <li>
             <a className="cursor-pointer font-bold" href="#">Bookings</a>
           </li></NavLink>
-          <NavLink to='/Blogs'>   <li>
+          <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/Blogs'>   <li>
             <a className="cursor-pointer font-bold" href="#">Blog</a>
           </li></NavLink>
-       <NavLink to='/Contact'>   <li>
+       <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/Contact'>   <li>
             <a className="cursor-pointer font-bold" href="#">Contact Us</a>
           </li></NavLink>
         </ul>
