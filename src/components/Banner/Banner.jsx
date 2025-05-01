@@ -14,7 +14,7 @@ const Banner = ({handleSearch}) => {
             <div className='lg:flex space-x-2 mx-auto'>
                 <form onSubmit={e=>handleSearch(e)}>
                     <input  className='w-[500px] h-[53px] rounded-lg px-2' type="text" name="searchedText" id="" placeholder='Search any Doctor' />
-                <button type='submit' className="btn btn-primary rounded-lg mt-2">Search Now</button>
+                <button type='submit' className="btn bg-[#176AE5] text-white rounded-lg mt-2">Search Now</button>
                 </form>
             </div>
             <div className='lg:flex justify-center space-x-3 mt-3'>
