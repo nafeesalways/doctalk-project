@@ -13,6 +13,7 @@ const Bookings = () => {
   const storedAppointments = getStoredAppointment();
   setAppointments(storedAppointments);
 }, []);
+
   const cancelAppointment = (id) => {
     const updated = appointments.filter((doc) => doc.id !== id);
     setAppointments(updated);

@@ -16,35 +16,38 @@ const Doctor = ({ singleDoctor }) => {
     return "error";
   }
   return (
-    <div className="card bg-base-100 w-[410px] h-[560px] p-6 space-x-12 shadow-sm border ">
-      <figure className="px-10 py-10">
-        <img className=" py-5" src={image} alt="Doctors" />
+   <div className="card w-full max-w-sm md:max-w-md lg:max-w-[410px] bg-white border shadow-md rounded-xl transition-transform hover:scale-[1.01] duration-300">
+      <figure className="p-6">
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-56 object-cover rounded-lg"
+        />
       </figure>
-      <div className="flex space-x-4 mt-5">
-        <p className="px-2 py-2 font-semibold bg-[#09982F] rounded-lg text-white">
-          Speciality:{" "}
-          <span className="font-semibold rounded-lg text-white">
-            {speciality}
-          </span>
-        </p>
-        <p className="px-2 font-semibold bg-[#176AE5] rounded-lg text-white mb-2">
-          Experience:<span className="font-semibold "> {experience}</span>
-        </p>
-      </div>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title">{name}</h2>
 
-        <p className="border-t-2 border-dashed">
-          <span className="font-semibold">{education}</span>
+      <div className="px-6">
+        <h2 className="text-xl font-bold text-center mb-2">{name}</h2>
+        <p className="text-sm text-center text-gray-600 mb-4 border-t pt-2">
+          <span className="font-medium">{education}</span>
         </p>
-        <RiRegisteredLine />
-        <p>
-          Reg No:<span className="font-semibold">{registrationNumber}</span>{" "}
-        </p>
-        <div className="card-actions">
+
+        <div className="flex flex-wrap justify-center gap-2 mb-4">
+          <span className="text-sm px-3 py-1 bg-green-600 text-white rounded-full">
+            Speciality: {speciality}
+          </span>
+          <span className="text-sm px-3 py-1 bg-blue-600 text-white rounded-full">
+            Experience: {experience}
+          </span>
+        </div>
+
+        <div className="flex items-center justify-center text-sm text-gray-700 mb-4">
+          <RiRegisteredLine className="mr-2 text-xl text-blue-600" />
+          Reg No: <span className="ml-1 font-semibold">{registrationNumber}</span>
+        </div>
+
+        <div className="pb-6 px-4">
           <Link to={`/doctorDetails/${id}`}>
-            {" "}
-            <button className="btn text-[#176AE5] rounded-lg btn-block">
+            <button className="btn btn-outline btn-primary w-full rounded-lg">
               View Details
             </button>
           </Link>

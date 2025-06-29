@@ -87,7 +87,7 @@ const DoctorDetails = () => {
 
           <NavLink to='/bookings'>  <button 
               onClick={() => handleBookAppointment(doctor)}
-              className="btn text-[#176AE5] rounded-lg btn-wide mt-4"
+              className="btn btn-outline btn-primary w-full rounded-lg mt-4"
             >
               Book Appointment Now
             </button></NavLink>
