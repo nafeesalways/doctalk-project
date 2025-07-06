@@ -4,7 +4,7 @@
 DocTalk is a user-friendly web application that allows patients to book appointments with doctors online, streamlining the process of healthcare access and scheduling.
 
 ## 🔗 Live Website
-[Visit DocTalk Live](https://doctalk-app.netlify.app) <!-- Replace with your actual live link -->
+[Visit DocTalk Live](https://doctalk-test.netlify.app/) <!-- Replace with your actual live link -->
 
 ## 📁 GitHub Repositories
 - **Repository:** [https://github.com/nafeesalways/doctalk-project](https://github.com/nafeesalways/doctalk-project)
