@@ -33,6 +33,10 @@ import Error from './Error';
       Component: Bookings,
     },
     {
+     path:'/emergency',
+     
+    },
+    {
       path: '/Blogs',
       loader:()=>fetch('/blogs.json'),
       hydrateFallbackElement: <Loader></Loader>,

@@ -1,12 +1,15 @@
 import React from "react";
-import logo from "../../assets/Frame 1.png";
+import logo from "../../assets/logo.png";
 import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center  p-10">
       <aside>
-        <img src={logo} alt="" />
+         <a className="btn btn-ghost lg:text-xl text-sm -ml-4">
+                <img className="h-5 w-5 lg:h-10 lg:w-10" src={logo} alt="" /><h2 className="font-bold">MEDOVA</h2>
+      
+              </a>
 
         <ul className="flex space-x-2">
         <NavLink className={({isActive})=>isActive? 'border-b-2': ''}  to='/'>   <li>
