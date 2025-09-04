@@ -16,7 +16,7 @@ const Doctor = ({ singleDoctor }) => {
     return "error";
   }
   return (
-   <div className="card w-full max-w-sm md:max-w-md lg:max-w-[410px] bg-white border shadow-md rounded-xl transition-transform hover:scale-[1.01] duration-300">
+   <div className="card w-full mx-auto max-w-sm md:max-w-md lg:max-w-[410px] bg-white border shadow-md rounded-xl transition-transform hover:scale-[1.01] duration-300">
       <figure className="p-6">
         <img
           src={image}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./Navbar.css";
 import EmergencyInfo from "./EmergencyInfo";
 
@@ -75,7 +75,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost lg:text-xl text-sm -ml-4">
-          <img className="h-5 w-5 lg:h-10 lg:w-10" src={logo} alt="" /><h2 className="font-bold">MEDOVA</h2>
+          <img className="h-5 w-5 lg:h-10 lg:w-10" src={logo} alt="" /><Link to='/' className="font-bold">MEDOVA</Link>
 
         </a>
       </div>
